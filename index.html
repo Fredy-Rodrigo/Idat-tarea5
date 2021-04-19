@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Listado de productos</h1>
+
+        <div class="filtros">
+            <form action="">
+                <fieldset>
+                    <legend>Filtros</legend>
+                    <div class="comboboxCategoria">
+                        <label for="comboboxCategoria">Categoría</label>
+                        <select name="categorias" id="comboboxCategoria">
+                            <option hidden value="">Seleccione una categoria</option>
+                            <option value="bebidas">Bebidas</option>
+                            <option value="condimentos">Condimentos</option>
+                            <option value="frutas/verduras">Frutas/Verduras</option>
+                            <option value="carnes">Carnes</option>
+                            <option value="pescado/marisco">Pescados/Mariscos</option>
+                            <option value="lácteos">Lácteos</option>
+                            <option value="repostería">Repostería</option>
+                            <option value="granos/cereales">Granos/Cereales</option>
+                        </select>
+                    </div>
+                    <div class="textoProducto">
+                        <label for="producto">Nombre producto</label>
+                        <input id="producto" type="text">
+                    </div>
+                    
+                    <div class="buscar">
+                        <input id="botonBuscar" type="button" value="Buscar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="tabla">
+            <table>
+                <tr>
+                    <th>Código</th>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Proveedor</th>
+                </tr>
+                <tbody id="contenidoTabla"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
